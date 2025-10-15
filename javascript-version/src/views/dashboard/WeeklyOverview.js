@@ -11,8 +11,7 @@ import Tooltip from '@mui/material/Tooltip'
 
 // ** Icons Imports
 import DotsVertical from 'mdi-material-ui/DotsVertical'
-import GenderMale from 'mdi-material-ui/GenderMale'
-import GenderFemale from 'mdi-material-ui/GenderFemale'
+
 
 // ** Custom Components Imports
 import ReactApexcharts from 'src/@core/components/react-apexcharts'
@@ -34,7 +33,7 @@ const GenderDistributionChart = () => {
     const fetchData = async () => {
       try {
         setIsLoading(true)
-        const response = await fetch('https://mtc.pinnaclesystems.co.in/misDashboard/yearlyComp')
+        const response = await fetch('http://localhost:9007/api/yearlyComp')
 
         if (!response.ok) {
           throw new Error('Failed to fetch data')

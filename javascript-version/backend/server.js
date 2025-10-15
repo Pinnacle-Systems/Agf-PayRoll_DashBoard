@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import misDashboard from './src/routes/misDashboard.js'
+import misDashboard from './routes/misDashboard.js'
 
 const app = express()
 app.use(cors())
